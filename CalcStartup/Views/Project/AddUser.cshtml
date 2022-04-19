@@ -1,0 +1,48 @@
+﻿<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+@{
+    ViewBag.Title = "Создание проекта";
+}
+@model CalcStartup.ViewModels.ProjectTeamsViewModel
+<div class="container">
+    <div class="row header" style="text-align:center">
+        <h3>Создание проекта</h3>
+    </div>
+      <p></p>
+    <form asp-action="FindUsers" asp-controller="Project" method="get">
+        <input type="text" id="Username" name="Username"/>
+        <button type="submit" class="btn btn-sm btn-primary"> Найти пользователя</button>
+        <input type="hidden" id="ProjectId" name="ProjectId" value="@Model.ProjectId"></input>
+    </form>
+    <p></p>
+
+    
+
+    <table class="table table-striped table-bordered">
+    <tr>
+        <th>Email</th>
+        <th>Логин</th>
+        <th>Роль</th>
+                <th>Действия</th>    
+    </tr>
+    @foreach (var user in Model.Users)
+    {
+        <form asp-action="Add" asp-controller="Project" method="post">
+        <tr>
+            <td>@user.Email</td>
+            <td>@user.UserName</td>
+            <td>@user.RoleName</td>
+                    <td>  
+                    <button type="submit" class="btn btn-sm btn-primary"> Добавить</button>
+                    <input type="hidden" id="UserId" name="UserId" value="@user.Id"></input>   
+                     <input type="hidden" id="Id" name="Id" value="@Model.ProjectId"></input> 
+            </td>     
+        </tr>
+        </form>
+    }
+    </table>
+   
+
+</div>

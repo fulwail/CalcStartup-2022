@@ -1,0 +1,456 @@
+﻿++Решение "CalcStartup" ‎(проекты: 1 из 1)
+i:{00000000-0000-0000-0000-000000000000}:CalcStartup.sln
+++CalcStartup
+i:{00000000-0000-0000-0000-000000000000}:CalcStartup
+++Connected Services 
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1104
+++Properties
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\properties\
+++wwwroot
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\
+++Зависимости
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1103
+++Анализаторы
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:анализаторы
+++Пакеты
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:пакеты
+++AutoMapper (10.1.1)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1137
+++ClosedXML (0.95.4)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1142
+++Mapster (7.2.0)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1136
+++Mapster.Core (1.2.0)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1132
+++Mapster.DependencyInjection (1.0.0)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1135
+++Mapster.EFCore (5.1.0)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1144
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.1)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1133
+++Microsoft.EntityFrameworkCore (6.0.1)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1127
+++Microsoft.EntityFrameworkCore.Design (6.0.1)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1130
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.1)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1128
+++Microsoft.EntityFrameworkCore.SqlServer.Design (1.1.6)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1126
+++Microsoft.EntityFrameworkCore.Tools (6.0.1)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1140
+++Microsoft.Extensions.Configuration (6.0.0)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1138
+++Microsoft.Extensions.Configuration.Abstractions (6.0.0)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1129
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1141
+++Newtonsoft.Json (13.0.1)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1131
+++Nito.AsyncEx (5.1.2)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1143
+++System.Configuration.ConfigurationManager (6.0.0)
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1134
+++Платформы
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:платформы
+++Controllers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\controllers\
+++AccountController.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\controllers\accountcontroller.cs
+++CompanyController.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\controllers\companycontroller.cs
+++NsiController.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\controllers\nsicontroller.cs
+++ProjectController.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\controllers\projectcontroller.cs
+++UserController.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\controllers\usercontroller.cs
+++Domain
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\domain\
+++DBExtension.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\domain\dbextension.cs
+++ISqlContext.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\domain\isqlcontext.cs
+++SqlContext.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\domain\sqlcontext.cs
+++Extensions
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\extensions\
+++EnumExtension.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\extensions\enumextension.cs
+++ExcelCreatorHelper.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\extensions\excelcreatorhelper.cs
+++Identity
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\identity\
+++Models
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\
+++Enums
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\enums\
+++PaymentType.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\enums\paymenttype.cs
+++WorkWeekType.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\enums\workweektype.cs
+++Company.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\company.cs
+++Consumable.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\consumable.cs
+++DistrictCoefficient.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\districtcoefficient.cs
+++GraphDataSet.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\graphdataset.cs
+++Holiday.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\holiday.cs
+++Project.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\project.cs
+++ProjectPrice.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\projectprice.cs
+++ProjectUser.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\projectuser.cs
+++ProjectWork.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\projectwork.cs
+++ReportResult.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\reportresult.cs
+++Resource.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\resource.cs
+++ScatterConfig.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\scatterconfig.cs
+++SemiVariableExpense.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\semivariableexpense.cs
+++Staff.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\staff.cs
+++TariffRate.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\tariffrate.cs
+++TimeFund.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\models\timefund.cs
+++Profiles
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\profiles\
+++Service
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\
+++ViewModels
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\
+++ChartViewModelList.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\chartviewmodellist.cs
+++ColumnTableViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\columntableviewmodel.cs
+++CompanyViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\companyviewmodel.cs
+++CreateCompanyViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createcompanyviewmodel.cs
+++CreateConsumableViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createconsumableviewmodel.cs
+++CreateDistrictCoefficientsViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createdistrictcoefficientsviewmodel.cs
+++CreateHolidayViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createholidayviewmodel.cs
+++CreateProjectViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createprojectviewmodel.cs
+++CreateProjectWorkViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createprojectworkviewmodel.cs
+++CreateResourceViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createresourceviewmodel.cs
+++CreateStaffViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createstaffviewmodel.cs
+++CreateTariffRateViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createtariffrateviewmodel.cs
+++CreateUserViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\createuserviewmodel.cs
+++DistrictCoefficientViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\districtcoefficientviewmodel.cs
+++EditProjectViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\editprojectviewmodel.cs
+++EditUserViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\edituserviewmodel.cs
+++ErrorViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\errorviewmodel.cs
+++HolidayViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\holidayviewmodel.cs
+++LoginViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\loginviewmodel.cs
+++ProjectListViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\projectlistviewmodel.cs
+++ProjectTeamsViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\projectteamsviewmodel.cs
+++ProjectViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\projectviewmodel.cs
+++RegisterViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\registerviewmodel.cs
+++ReportViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\reportviewmodel.cs
+++TariffRateViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\tariffrateviewmodel.cs
+++TimeFundViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\timefundviewmodel.cs
+++UpdateProjectViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\updateprojectviewmodel.cs
+++UserViewModel.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\viewmodels\userviewmodel.cs
+++Views
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\
+++Account
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\account\
+++Login.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\account\login.cshtml
+++Register.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\account\register.cshtml
+++Company
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\company\
+++Index.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\company\index.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\project\index.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\user\index.cshtml
+++Nsi
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\nsi\
+++DistrictCoefficients.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\nsi\districtcoefficients.cshtml
+++Holidays.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\nsi\holidays.cshtml
+++TariffRates.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\nsi\tariffrates.cshtml
+++Project
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\project\
+++AddUser.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\project\adduser.cshtml
+++Edit.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\project\edit.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\user\edit.cshtml
+++Statistics.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\project\statistics.cshtml
+++Team.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\project\team.cshtml
+++Shared
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\shared\
+++User
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\user\
+++Create.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\user\create.cshtml
+++_ViewImports.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\_viewstart.cshtml
+++appsettings.json
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\appsettings.json
+++Program.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\program.cs
+++Startup.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\startup.cs
+++Зависимости службы не обнаружены
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:>1105
+++launchSettings.json
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\properties\launchsettings.json
+++css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\css\
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\js\
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\
+++resources
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\resources\
+++favicon.ico
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\favicon.ico
+++MessagePackAnalyzer
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\users\kiry9\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\users\kiry9\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\users\kiry9\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\users\kiry9\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\microsoft.netcore.app
+++Model
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\identity\model\
+++MappingProfile.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\profiles\mappingprofile.cs
+++CalculatorService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\calculatorservice.cs
+++CompanyService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\companyservice.cs
+++ExcelService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\excelservice.cs
+++ICalculatorService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\icalculatorservice.cs
+++ICompanyService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\icompanyservice.cs
+++INsiService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\insiservice.cs
+++IProjectService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\iprojectservice.cs
+++IStatisticSevrice.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\istatisticsevrice.cs
+++NsiService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\nsiservice.cs
+++ProjectService.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\service\projectservice.cs
+++_Layout.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\shared\error.cshtml
+++appsettings.Development.json
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\appsettings.development.json
+++site.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\css\site.css
+++site.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\js\site.js
+++bootstrap
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\
+++jquery
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery\
+++jquery-validation
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation-unobtrusive\
+++AddIcon.png
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\resources\addicon.png
+++delete.png
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\resources\delete.png
+++Logout.png
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\resources\logout.png
+++Role.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\identity\model\role.cs
+++User.cs
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\identity\model\user.cs
+++_Layout.cshtml.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\views\shared\_layout.cshtml.css
+++dist
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery\dist\
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery\license.txt
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{44a9e263-1620-4e61-8495-84734f46b76f}:c:\курсовая программная инженерия\calcstartup\calcstartup\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map

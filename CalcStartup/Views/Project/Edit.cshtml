@@ -1,0 +1,340 @@
+﻿@using   CalcStartup.Extensions
+<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+@{
+    ViewBag.Title = "Редактирование проекта";
+   
+}
+@model CalcStartup.ViewModels.EditProjectViewModel
+
+@using (Html.BeginForm("UpdateProject", "Project", FormMethod.Post))
+{
+    <div>
+        <button style="float: right; margin-top:20px" type="submit" class="btn btn-primary"> Сохранить  и перерасчитать</button>
+        </div>
+        <div class="rotopr" style="text-align:center">
+        <h3>Основная информация</h3>
+    </div>
+        <p></p>
+        <div>
+     <input type="hidden" asp-for="Project.Id" />
+     <label asp-for="Project.Name" class="control-label">Наименование</label>
+      <input  value="@Model.Project.Name" type="text" asp-for="Project.Name" class="form-control" />
+      <p></p>
+       <label asp-for="Project.ProfitPercentage"  class="control-label">Ожидаемый процент прибыли</label>
+      <input  value="@Model.Project?.ProfitPercentage"  oninput="this.value = this.value.replace(/[^0-9,]/g, ''); this.value = this.value.replace(/(\,,*)\,/g, '$1');" type="text" asp-for="Project.ProfitPercentage" class="form-control" />
+          <p></p>
+          <label  class="control-label">Тип рабочей недели</label>
+             <select title="Тип рабочей недели" class="form-control"  id="selectWorkWeekType" asp-for="Project.TimeFund.WorkWeekType">
+                        <option value=""></option>
+                        <option selected=@(Model?.Project?.TimeFund?.WorkWeekType==CalcStartup.Models.Enums.WorkWeekType.day5) 
+                        value="@(CalcStartup.Models.Enums.WorkWeekType.day5)">Пятидневная рабочая неделя
+                        </option>
+                        <option selected=@(Model?.Project?.TimeFund?.WorkWeekType==CalcStartup.Models.Enums.WorkWeekType.day6) 
+                        value="@(CalcStartup.Models.Enums.WorkWeekType.day6)">Шестидневная рабочая неделя
+                        </option>
+            </select>
+            <p></p>
+            <label asp-for="Project.TimeFund.WorkTime" class="control-label">Рабочее время</label>
+            <input  value="@Model?.Project?.TimeFund?.WorkTime" type="text"   oninput="this.value = this.value.replace(/[^0-9,]/g, ''); this.value = this.value.replace(/(\,,*)\,/g, '$1');" asp-for="Project.TimeFund.WorkTime" class="form-control" />
+            <p></p>
+            <label asp-for="Project.DistrictCoefficientId" class="control-label">Список районных коэффициентов</label>
+            <select  disabled="@(Model.DistrictCoefficients.Count == 0)" title="Компания" class="form-control" id="selectCompany" asp-for=Project.DistrictCoefficientId>
+                @if (Model.DistrictCoefficients.Count != 0)
+                {
+                    <option value=""></option>
+                    foreach (var districtCoefficient in Model.DistrictCoefficients)
+                    {
+                        <option selected="@(Model.Project.DistrictCoefficientId==districtCoefficient.Id)" value="@districtCoefficient.Id">@districtCoefficient.Name</option>
+                    }
+
+                }
+                else
+                {
+                    <option>Коэффициенты отсутсвуют </option>
+                }
+                    
+            </select>
+            </div>
+}
+ <p></p>
+<hr size="4" color="#0000dd" style="margin-top: 50px;margin-bottom: 50px;"/>
+<p></p>
+<div class="container">
+    <div class="row header" style="text-align:center">
+        <h3>Нормативные показатели</h3>
+    </div>
+      <p></p>
+            @using (Html.BeginForm("CreateProjectWorks", "Project", FormMethod.Post))
+            {
+                <input style="height:33px; margin-right: 10px"  placeholder="Наименование"  class="col-md-2" title="Наименование" name="Name"
+                           id="Name" type="text" value=""/>            
+                 <input style="height:33px; margin-right: 10px"  placeholder="Оперативная работа"  class="col-md-2" title="Время оперативной работы" name="TotalTime"
+                           id="TotalTime" type="text" value="" oninput="this.value = this.value.replace(/[^0-9,]/g, ''); this.value = this.value.replace(/(\,,*)\,/g, '$1');"/>       
+                <input type="image" src="~/resources/AddIcon.png" alt="Submit" width="25" height="25">
+                <input type="hidden" name="ProjectId" value="@Model.Project.Id" />
+            }    
+            <br />
+
+        <table id="DistrictCoefficient" class="table table-striped table-bordered" style="width:100%; margin-left: auto; margin-right: auto;">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Наименование</th>
+                    <th style="text-align: center">Общее оперативное время, час</th>   
+                    <th style="text-align: center">Подготовительно – заключительное время, час</th>      
+                    <th style="text-align: center">Время на отдых, час</th>   
+                    <th style="text-align: center">Время на личные надобности, час</th>    
+                    <th style="text-align: center">Норма времени,час </th>   
+                    <th style="text-align: center">Действия</th>    
+                </tr>
+            </thead>
+            @foreach (var ProjectWorks in @Model.Project.ProjectWorks)
+            {
+                <tr>
+                    <td style="text-align: left"> @ProjectWorks.Name</td>
+                    <td style="text-align: center"> @ProjectWorks.TotalTime</td>
+                    <td style="text-align: center"> @ProjectWorks.PreparatoryFinalTime</td>
+                     <td style="text-align: center"> @ProjectWorks.RestTime</td>
+                     <td style="text-align: center"> @ProjectWorks.PersonalTime</td>
+                     <td style="text-align: center"> @ProjectWorks.NormTime</td>
+                    <td style="text-align: center"> 
+                        @using (Html.BeginForm("DeleteProjectWork", "Project", FormMethod.Post))
+                        { 
+                            <button type="submit" class="btn btn-sm btn-danger"> Удалить   </button>
+                            <input type="hidden" name="ProjectId" value="@ProjectWorks.ProjectId" />
+                            <input type="hidden" name="ProjectWorkId" value="@ProjectWorks.Id" />
+                        }
+                    </td>
+                </tr>
+            }
+        @if (Model.Project?.ProjectWorks?.Count != 0)
+        {
+            <tr>
+                    <td style="text-align: left">Итого:</td>
+                    <td style="text-align: center"> @Model.Project.ProjectWorks.Sum(x=>x.TotalTime)</td>
+                    <td style="text-align: center"> @Model.Project.ProjectWorks.Sum(x=>x.PreparatoryFinalTime)</td>
+                     <td style="text-align: center"> @Model.Project.ProjectWorks.Sum(x=>x.RestTime)</td>
+                     <td style="text-align: center"> @Model.Project.ProjectWorks.Sum(x=>x.PersonalTime)</td>
+                     <td style="text-align: center"> @Model.Project.ProjectWorks.Sum(x=>x.NormTime)</td>
+                </tr>
+        }
+        </table>
+    
+   
+
+        <p></p>
+<hr size="4" color="#0000dd" style="margin-top: 50px;margin-bottom: 50px;"/>
+<p></p>
+<div class="container">
+    <div class="row header" style="text-align:center">
+        <h3>Основные средства и амортизация</h3>
+    </div>
+      <p></p>
+            @using (Html.BeginForm("CreateResource", "Project", FormMethod.Post))
+            {
+                  <select title="Вид оплаты" class="form-control"  id="selectPaymentType" name="PaymentType">
+                        <option value="@(CalcStartup.Models.Enums.PaymentType.Monthly)">@CalcStartup.Extensions.EnumExtension.GetDescription(CalcStartup.Models.Enums.PaymentType.Monthly)
+                        </option>
+                        <option value="@(CalcStartup.Models.Enums.PaymentType.Yearly)">@CalcStartup.Extensions.EnumExtension.GetDescription(CalcStartup.Models.Enums.PaymentType.Yearly)
+                        </option>
+                         <option value="@(CalcStartup.Models.Enums.PaymentType.Single)">@CalcStartup.Extensions.EnumExtension.GetDescription(CalcStartup.Models.Enums.PaymentType.Single)
+                        </option>
+            </select>
+            <p></p>
+                <input style="height:33px; margin-right: 10px"  placeholder="Наименование"  class="col-md-2" title="Наименование" name="Name"
+                           id="Name" type="text" value=""/>            
+                 <input style="height:33px; margin-right: 10px"  placeholder="Стоимость"  class="col-md-2" title="Стоимость" name="Amount"
+                           id="Amount" type="text" value="" oninput="this.value = this.value.replace(/[^0-9,]/g, ''); this.value = this.value.replace(/(\,,*)\,/g, '$1');"/>  
+                <input style="height:33px; margin-right: 10px"  placeholder="Количество"  class="col-md-2" title="Количество" name="Count"
+                           id="Count" type="number" value=""/>   
+               <input style="height:33px; margin-right: 10px"  placeholder="Срок службы"  class="col-md-2" title="Срок службы" name="LifeTime"
+                           id="LifeTime" type="text" value="" oninput="this.value = this.value.replace(/[^0-9,]/g, ''); this.value = this.value.replace(/(\,,*)\,/g, '$1');"/>  
+                <input type="image" src="~/resources/AddIcon.png" alt="Submit" width="25" height="25">
+                <input type="hidden" name="ProjectId" value="@Model.Project.Id" />
+
+               
+            }    
+            <br />
+
+
+        <table id="Resource" class="table table-striped table-bordered" style="width:100%; margin-left: auto; margin-right: auto;">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Наименование</th>
+                     <th style="text-align: center">Вид оплаты</th>   
+                    <th style="text-align: center">Количество, шт</th>   
+                    <th style="text-align: center">Стоимость, руб.</th>      
+                    <th style="text-align: center">Срок эксплуатации, лет</th>   
+                    <th style="text-align: center">Годовые нормы амортизации,%</th>    
+                    <th style="text-align: center">Годовые амортиза-ционные отчисле¬ния, руб</th>   
+                    <th style="text-align: center">Действия</th>    
+                </tr>
+            </thead>
+            @foreach (var Resource in @Model.Project.Resources)
+            {
+                <tr>
+                    <td style="text-align: left"> @Resource.Name</td>
+                    <td style="text-align: center"> @CalcStartup.Extensions.EnumExtension.GetDescription(@Resource.PaymentType)</td>
+                    <td style="text-align: center"> @Resource.Count</td>
+                    <td style="text-align: center"> @Resource.Amount</td>
+                     <td style="text-align: center"> @Resource.LifeTime</td>
+                     <td style="text-align: center"> @Resource.DepreciationRates</td>
+                       <td style="text-align: center"> @Resource.DepreciationCharges</td>
+                    <td style="text-align: center"> 
+                        @using (Html.BeginForm("DeleteResource", "Project", FormMethod.Post))
+                        { 
+                            <button type="submit" class="btn btn-sm btn-danger"> Удалить   </button>
+                            <input type="hidden" name="ProjectId" value="@Resource.ProjectId" />
+                            <input type="hidden" name="ResoursceId" value="@Resource.Id" />
+                        }
+                    </td>
+                </tr>
+            }
+        @if (Model.Project?.Resources?.Count != 0)
+        {
+            <tr>
+                    <td style="text-align: left">Итого:</td>
+                     <td></td>
+                    <td style="text-align: center"> @Model.Project.Resources.Sum(x=>x.Count)</td>
+                     <td style="text-align: center"> @Model.Project.Resources.Sum(x=>x.Amount)</td>
+                     <td style="text-align: center"> @Model.Project.Resources.Sum(x=>x.Sum)</td>
+                     <td style="text-align: center"> @Model.Project.Resources.Sum(x=>x.DepreciationRates)</td>
+                     <td style="text-align: center"> @Model.Project.Resources.Sum(x=>x.DepreciationCharges)</td>
+                     <td> </td>
+                </tr>
+        }
+        </table>
+
+
+
+            <p></p>
+<hr size="4" color="#0000dd" style="margin-top: 50px;margin-bottom: 50px;"/>
+<p></p>
+<div class="container">
+    <div class="row header" style="text-align:center">
+        <h3>Основные и вспомогательные материалы</h3>
+    </div>
+      <p></p>
+            @using (Html.BeginForm("CreateConsumable", "Project", FormMethod.Post))
+            {
+                <input style="height:33px; margin-right: 10px"  placeholder="Наименование"  class="col-md-2" title="Наименование" name="Name"
+                           id="Name" type="text" value=""/>            
+                 <input style="height:33px; margin-right: 10px"  placeholder="Стоимость"  class="col-md-2" title="Стоимость" name="Amount"
+                           id="Amount" type="text" value="" oninput="this.value = this.value.replace(/[^0-9,]/g, ''); this.value = this.value.replace(/(\,,*)\,/g, '$1');"/>  
+                <input style="height:33px; margin-right: 10px"  placeholder="Количество"  class="col-md-2" title="Количество" name="Count"
+                           id="Count" type="number" value=""/>                
+                <input type="image" src="~/resources/AddIcon.png" alt="Submit" width="25" height="25">
+                <input type="hidden" name="ProjectId" value="@Model.Project.Id" />            
+            }    
+            <br />
+
+
+        <table id="Consumable" class="table table-striped table-bordered" style="width:100%; margin-left: auto; margin-right: auto;">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Наименование</th> 
+                    <th style="text-align: center">Стоимость, руб.</th>    
+                    <th style="text-align: center">Количество, шт</th>  
+                    <th style="text-align: center">Сумма</th>   
+                    <th style="text-align: center">Действия</th>    
+                </tr>
+            </thead>
+            @foreach (var Consumable in @Model.Project.Consumables)
+            {
+                <tr>
+                    <td style="text-align: left"> @Consumable.Name</td>
+                     <td style="text-align: center"> @Consumable.Amount</td>
+                      <td style="text-align: center"> @Consumable.Count</td>
+                     <td style="text-align: center"> @Consumable.Sum</td>
+                    <td style="text-align: center"> 
+                        @using (Html.BeginForm("DeleteConsumable", "Project", FormMethod.Post))
+                        { 
+                            <button type="submit" class="btn btn-sm btn-danger"> Удалить   </button>
+                            <input type="hidden" name="ProjectId" value="@Consumable.ProjectId" />
+                            <input type="hidden" name="ConsumableId" value="@Consumable.Id" />
+                        }
+                    </td>
+                </tr>
+            }
+        @if (Model.Project?.Consumables?.Count != 0)
+        {
+            <tr>
+                    <td style="text-align: left">Итого:</td>
+                    <td style="text-align: center"> @Model.Project.Consumables.Sum(x=>x.Amount)</td>
+                     <td style="text-align: center"> @Model.Project.Consumables.Sum(x=>x.Count)</td>
+                     <td style="text-align: center"> @Model.Project.Consumables.Sum(x=>x.Sum)</td>
+                </tr>
+        }
+        </table>
+
+
+        
+            <p></p>
+<hr size="4" color="#0000dd" style="margin-top: 50px;margin-bottom: 50px;"/>
+<p></p>
+<div class="container">
+    <div class="row header" style="text-align:center">
+        <h3>Рабочие ставки персоналов</h3>
+    </div>
+      <p></p>
+            @using (Html.BeginForm("CreateStaff", "Project", FormMethod.Post))
+            {
+                 <select  disabled="@(Model.TariffRates.Count == 0)" title="Тарифные ставки" class="form-control" id="selectTariffRate" name="TariffRateId" >
+                @if (Model.TariffRates.Count != 0)
+                {
+                    foreach (var TariffRate in Model.TariffRates)
+                    {
+                        <option value="@TariffRate.Id">@TariffRate.Name @TariffRate.Rank разряда</option>
+                    }
+
+                }
+                else
+                {
+                    <option>Разряды отсутсвуют </option>
+                }
+                    
+            </select>
+
+                <input style="height:33px; margin-right: 10px"  placeholder="Количество"  class="col-md-2" title="Количество" name="StaffCount"
+                           id="Count" type="number" value=""/>       
+                
+                <input type="image" src="~/resources/AddIcon.png" alt="Submit" width="25" height="25">
+                <input type="hidden" name="ProjectId" value="@Model.Project.Id" />            
+            }    
+             
+            <br />
+
+
+        <table id="Consumable" class="table table-striped table-bordered" style="width:100%; margin-left: auto; margin-right: auto;">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Наименование Разряда</th> 
+                    <th style="text-align: center">Количество работников</th>    
+                    <th style="text-align: center">Разряд</th>  
+                    <th style="text-align: center">Тарифная ставка</th>  
+                    <th style="text-align: center">Действия</th> 
+                </tr>
+            </thead>
+            @foreach (var Staff in @Model.Project.Staffs)
+            {
+                <tr>
+                    <td style="text-align: left"> @Staff.TariffRate.Name</td>
+                     <td style="text-align: center"> @Staff.StaffCount</td>
+                      <td style="text-align: center"> @Staff.TariffRate.Rank</td>
+                     <td style="text-align: center"> @Staff.TariffRate.Salary</td>
+                    <td style="text-align: center"> 
+                        @using (Html.BeginForm("DeleteStaff", "Project", FormMethod.Post))
+                        { 
+                            <button type="submit" class="btn btn-sm btn-danger"> Удалить   </button>
+                            <input type="hidden" name="ProjectId" value="@Staff.ProjectId" />
+                            <input type="hidden" name="StaffId" value="@Staff.Id" />
+                        }
+                    </td>
+                </tr>
+            } 
+        </table>
+    
+</div>
+

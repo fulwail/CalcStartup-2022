@@ -1,0 +1,53 @@
+﻿@model CalcStartup.ViewModels.CreateUserViewModel
+@{
+    ViewBag.Title = "Добавление пользователя";
+}
+    @using (Html.BeginForm("Create", "User", FormMethod.Post))
+{
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label">Email</label>
+        <input type="email" asp-for="Email" class="form-control" />
+    </div>
+      <div class="form-group">
+        <label asp-for="Username" class="control-label">Логин</label>
+        <input type="text" asp-for="Username" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="control-label">Пароль</label>
+        <input type="password" asp-for="Password" class="form-control" />
+    </div>
+      @if (User.IsInRole(CalcStartup.Identity.Model.Role.GlobalAdmin))
+    {
+        <div class="form-group">
+            <label asp-for="CompanyId" class="control-label">Список компаний</label>
+            <select  disabled="@(Model?.Companies==null||Model.Companies.Count == 0)" title="Список компаний" class="form-control" id="selectCompany" name="CompanyId">
+                @if (Model?.Companies!=null&&Model.Companies.Count!= 0)
+                {
+                    <option value=""></option>
+                    foreach (var company in Model.Companies)
+                    {
+                        <option value="@company.Id">@company.Name</option>
+                    }
+
+                }
+                else
+                {
+                    <option>Компании отсутсвуют </option>
+                }
+            </select>
+             </div>
+             <p />
+              <div class="form-group">
+                        <select title="Список доступных ролей" class="form-control" id="selectRole" name="Role">
+                        <option value="@CalcStartup.Identity.Model.Role.GlobalAdmin">@CalcStartup.Identity.Model.Role.GlobalAdmin</option>
+                        <option value="@CalcStartup.Identity.Model.Role.TeamManager">@CalcStartup.Identity.Model.Role.TeamManager</option>
+                        <option value="@CalcStartup.Identity.Model.Role.Employee">@CalcStartup.Identity.Model.Role.Employee</option>
+            </select>
+        </div>
+    }
+    <p />
+    <div class="form-group">
+        <input type="submit" value="Добавить" class="btn btn-outline-secondary" />
+    </div>
+}

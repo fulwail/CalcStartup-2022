@@ -1,0 +1,31 @@
+﻿@model CalcStartup.ViewModels.LoginViewModel
+<form method="post" asp-controller="Account" asp-action="Login"
+      asp-route-returnUrl="@Model.ReturnUrl">
+       <div asp-validation-summary="ModelOnly"></div>
+     <div class="container d-flex justify-content-center align-items-center">
+    <div class="card" >
+        <div class="p-3 border-bottom d-flex align-items-center justify-content-center">
+            <h5>Вход</h5>
+        </div>
+        <div class="p-3 px-4 py-4 border-bottom"> <input type="text" class="form-control mb-2" placeholder="Email/Username"  asp-for="UserName" />
+         <span asp-validation-for="UserName"></span>
+              <br/>
+            <div class="form"> 
+
+                <input  type="password" class="form-control" placeholder="Пароль"  asp-for="Password"/> 
+                  <span asp-validation-for="Password"></span>
+                  <p></p>
+                  <label asp-for="RememberMe" style=" margin-bottom:10px"></label>
+                  <input asp-for="RememberMe" />
+
+                <button class="btn btn-danger btn-block continue col-md-12">Войти</button>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-3"> 
+           <div class="p-3 d-flex flex-row justify-content-center align-items-center member" style=" margin-bottom:10px"> <span>Впервые тут?  </span> <a asp-controller="Account" asp-action="Register" class="text-decoration-none ml-2"> Зарегистрироваться</a> </div>
+        </div>
+      
+    </div>
+    </div>
+    </div>
+</div>
+</form>
+
